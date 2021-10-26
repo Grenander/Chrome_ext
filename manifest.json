@@ -1,0 +1,30 @@
+{
+    "manifest_version": 2,
+    "name": "Inverted Adblocker",
+    "version": "0.0.1",
+    "description": "Extension that let you specify that all advertisements will be of one brand or type",
+    "icons": {
+        "16": "images/16x16.png",
+        "48": "images/48x48.png",
+        "128": "images/128x128.png"
+    },
+    "browser_action": {
+        "default_title": "Inverted Adblocker",
+        "default_popup": "views/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["js/in-content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": false
+    },
+    "content_security_policy":
+        "script-src 'self' 'unsafe-eval'; object-src 'self'; img-src * data: 'self' 'unsafe-eval'",
+    "offline_enabled": true,
+    "permissions": ["tabs", "<all_urls>", "activeTab", "storage"],
+    "web_accessible_resources": ["*.jpg"]
+}

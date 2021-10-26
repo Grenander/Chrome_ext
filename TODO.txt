@@ -1,0 +1,13 @@
+TODO:
+
+Get the filtering to work like I want...
+
+References:
+
+This is a request method: https://developer.chrome.com/docs/extensions/reference/webRequest/
+
+Lots of examples: https://github.com/GoogleChrome/chrome-extensions-samples
+
+Filtering: https://stackoverflow.com/questions/48153500/filtering-html-elements-using-javascript-chrome-extension
+
+Hmmm: https://developers.google.com/publisher-tag/guides/passback-tags#construct_passback_tags
